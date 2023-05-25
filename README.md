@@ -36,7 +36,7 @@ const isRed = false;
  */
 const style = twStyle`
   font-bold
-  ${isBlue ? "text-red" : "text-blue"}
+  ${isRed ? "text-red" : "text-blue"}
 `;
 ```
 
@@ -45,11 +45,10 @@ You can also use twStyle inside twStyle.
 ```jsx
 import twStyle from "tw-style";
 
-const isRed = false;
-const textStyle = twStyle`text-white font-bold`;
 /**
  * twStyle will return "bg-blue-500 hover:bg-red-500 text-white font-bold"
  */
+const textStyle = twStyle`text-white font-bold`;
 const style = twStyle`
       bg-blue-500
       hover:bg-red-500
