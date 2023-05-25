@@ -5,7 +5,7 @@ twStyle is a framework that allows you to easily create and combine **tailwind**
 ## Installation
 
 ```
-npm i twStyle
+npm i tw-style
 ```
 
 ## Using
@@ -13,7 +13,7 @@ npm i twStyle
 basic usage
 
 ```jsx
-import twStyle from "twStyle";
+import twStyle from "tw-style";
 
 /**
  * twStyle will return "font-bold text-red"
@@ -27,7 +27,7 @@ const style = twStyle`
 you can use conditional styles
 
 ```jsx
-import twStyle from "twStyle";
+import twStyle from "tw-style";
 
 const isRed = false;
 
@@ -43,7 +43,7 @@ const style = twStyle`
 You can also use twStyle inside twStyle.
 
 ```jsx
-import twStyle from "twStyle";
+import twStyle from "tw-style";
 
 const isRed = false;
 const textStyle = twStyle`text-white font-bold`;
